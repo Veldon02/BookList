@@ -1,0 +1,26 @@
+<ul>
+    <li *ngFor="let book of books">
+        <a>
+            <img src="{{book.imageUrl}}" alt="not found">
+            <div class="title">
+                {{book.title}}
+            </div>
+            <div class="author">
+                {{book.author}}
+            </div>
+            <star-rating 
+                [value]="book.rating" 
+                [totalstars]="5" 
+                checkedcolor="orange" 
+                uncheckedcolor="lightgrey" 
+                size="18px" 
+                [readonly]="true">
+            </star-rating>
+            <!-- <div class="book-description">
+                <span>
+                    {{book.description}}
+                </span>
+            </div> -->
+        </a>
+    </li>
+</ul>

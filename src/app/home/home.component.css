@@ -1,0 +1,31 @@
+ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+}
+
+a img{
+    height: 10rem;
+    object-fit: contain;
+}
+
+ul li a{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    height: 20rem;
+    width: 20rem;
+    
+    border-radius: 1rem;
+    margin: 0.5rem;    
+    border: 1px solid #fff;
+}
+
+ul li a:hover{
+    cursor: pointer;
+    border: 1px solid #655DBB;
+}
