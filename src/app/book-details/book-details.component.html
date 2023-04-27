@@ -1,0 +1,34 @@
+<div *ngIf="book" class="container">
+    <div class="buttons">
+        <button class="close-button" (click)="closeDialog()">✕</button>
+    </div>
+    <div class="characteristic categories">
+        <span class="header">Categories</span>
+        <span *ngFor="let category of book.volumeInfo.categories">{{category}}</span>
+    </div>
+    
+    <div class="characteristic isbn">
+        <div class="header">ISBN</div>
+        <span *ngFor="let id of book.volumeInfo.industryIdentifiers">{{id.type}} - {{id.identifier}}</span>
+    </div>
+    <div class="characteristic language">
+        <span class="header">Language</span>
+        <span>{{book.volumeInfo.language}}</span>
+    </div>
+    <div class="characteristic page-count">
+        <span class="header">Page count</span>
+        <span>{{book.volumeInfo.pageCount}}</span>
+    </div>
+    <div class="characteristic print-type">
+        <span class="header">Print type</span>
+        <span>{{book.volumeInfo.printType}}</span>
+    </div>
+    <div class="characteristic publisher">
+        <span class="header">Publisher</span>
+        <span>{{book.volumeInfo.publisher}}</span>
+    </div>
+    <div class="characteristic published-date">
+        <span class="header">Published date</span>
+        <span>{{book.volumeInfo.publishedDate}}</span>
+    </div>
+</div>

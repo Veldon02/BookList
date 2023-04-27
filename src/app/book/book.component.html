@@ -1,0 +1,36 @@
+<div class="my-container" *ngIf="book">
+    <button href="#" class="return-button" (click)="returnButtonClick()">Back</button>
+    <div class="book-card">
+        <div class="my-image">
+            <img [src]="book.volumeInfo.imageLinks?.thumbnail || defaultImage" alt="">
+        </div>
+        <div class="book-info">
+            <div class="book-title no-gutters">
+                <span>{{book.volumeInfo.title}}</span>
+            </div>
+            <div class="author">
+                <span>by {{book.volumeInfo.authors}}</span>
+            </div>
+            <div class="rating">
+                <app-star-rating [currentRate]="book.volumeInfo.averageRating || 0"></app-star-rating>
+            </div>
+            <div class="about-this-book">
+                <span>About this book:</span>
+            </div>
+            <div class="book-description" [innerHTML]="book.volumeInfo.description.trim()">
+            </div>
+            <br>
+            <br>
+            <div *ngIf="book.volumeInfo.infoLink" class="links">
+                <a href="{{book.volumeInfo.infoLink}}" target="_blank" class="buy-button">Buy Book</a>
+
+                <a href="#" class="more-button" (click)="openDetails($event)">More Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-not-found *ngIf="notFound" [visible]="true" message="Sorry, can`t find anything about this one :I"></app-not-found>
+
+
+

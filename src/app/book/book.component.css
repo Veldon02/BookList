@@ -1,0 +1,190 @@
+/* .container{
+    display: flex;
+    justify-content: center;
+    width: 60rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.container > * {
+    min-width: 25rem;
+    max-width: 40rem;
+}
+
+.info{
+    /* flex: 2; 
+    padding: 0.5rem;
+}
+
+.image{
+    /* flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+img{
+    height: 20rem;
+    width: auto;
+} 
+*/
+
+.my-container{
+    max-width: 80rem;
+    min-width: 20rem;
+    margin: 2rem auto;
+}
+
+.book-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(229, 228, 226, .4);
+    /* background-color: rgba(62, 84, 172,.2); */
+    padding: 1.5rem 0.5rem;
+    min-height: 35rem;
+    /* max-height: 200rem; */
+    border-radius: 1rem;
+    margin: 0 2.5rem;
+}
+
+
+.my-image{
+    padding: 0 1rem;
+    display: inline-block;
+    max-height: 32rem;
+    width: 25rem;
+    text-align: start;
+}
+
+.my-image img{
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+}
+
+.book-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 49rem;
+    min-width: 17.5rem;
+    min-height: 32rem;
+}
+
+.book-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.author{
+    font-size: 1rem;
+    color: #808080;
+}
+
+.rating{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.book-description{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: #71797E;
+    text-align: justify;
+    max-height: 15rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #808080;
+    padding-right:0.2rem;
+
+}
+
+.book-description::-webkit-scrollbar {
+    width: 0.325rem;
+}
+
+.book-description::-webkit-scrollbar-thumb {
+    background-color:  rgba(80, 80, 80, 0.2);
+    border-radius: 1.35rem;
+}
+
+.about-this-book{
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 1.2rem;
+}
+
+.links{
+    margin-top: auto;
+}
+
+.buy-button{
+    display: inline-block;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3E54AC;
+    padding: 0.7rem;
+
+    border-radius: 1rem;
+    border: solid 1px #3E54AC;
+    margin-right: 0.5rem;
+
+    transition: .3s;
+}
+
+.buy-button:hover{
+    background-color: #374372;
+    border-color: #374372;
+}
+
+.more-button{
+    display: inline-block;
+
+    font-size: 1.2rem;
+    color: #3E54AC;
+    background-color: #fff;
+    padding: 0.7rem;
+
+    border-radius: 1rem;
+    border: solid 1px #3E54AC;
+
+    transition: .3s;
+}
+
+.more-button:hover{
+    color: #fff;
+    background-color: #3E54AC;
+}
+
+.return-button{
+/* 
+    width: 3rem;
+    height: 3rem; */
+
+    border: none;
+
+    font-size: 1rem;
+    padding: 0.9rem;
+
+    color: #000;
+    border-radius: 1.5rem;
+    transition: .3s;
+    margin:0 2.5rem 1rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: rgba(229, 228, 226, .4);
+}
+
+.return-button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #3E54AC;
+}
+
+

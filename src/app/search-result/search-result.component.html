@@ -1,0 +1,26 @@
+<app-search></app-search>
+
+<div *ngIf="books && books.length > 0" class="container">
+    <div class="item" *ngFor="let book of books">
+        <a href="#" routerLink="/book/{{book.id}}">
+            <div class="image">
+                <img [src]="book?.volumeInfo?.imageLinks?.thumbnail || defaultImage" alt="Book cover">
+            </div>
+            <div class="book-title" title="{{book.volumeInfo.title}}">
+                {{book.volumeInfo.title}}
+            </div>
+            <div class="author" title="{{book.volumeInfo.authors}}">
+                {{book.volumeInfo.authors}}
+            </div>
+            <div class="rating">
+                <app-star-rating [currentRate]="book.volumeInfo.averageRating || 0"></app-star-rating>
+                <!-- <app-star-rating></app-star-rating> -->
+
+                <!-- <star-rating [value]="book.volumeInfo.averageRating" [totalstars]="5" checkedcolor="orange"
+                    uncheckedcolor="lightgrey" size="18px" [readonly]="true">
+                </star-rating> -->
+            </div>
+        </a>
+    </div>
+</div>
+<app-not-found *ngIf="books?.length === 0" [visible]="true" message="Can`t find anything with your input"></app-not-found>

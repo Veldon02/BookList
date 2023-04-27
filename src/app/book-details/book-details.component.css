@@ -1,0 +1,42 @@
+.container{
+    width: 22rem;
+    min-width: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+span{
+    display: block;
+    color: #71797E;
+    font-size: 1rem;
+}
+
+.header{
+    font-size: 1.2rem;
+    border-bottom: solid 3px rgba(229, 228, 226, .8);
+    margin-bottom: 0.25rem;
+    color: #000;
+}
+
+.characteristic{
+    margin: 0.25rem 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button{
+    border: none;
+    background-color: #fff;
+    color: #71797E;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width: 18rem;
+    }
+}

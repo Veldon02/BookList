@@ -9,11 +9,41 @@ html{
 }
 
 body{
+    height: auto;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 a{
+    color: #000;
     text-decoration: none;
 }
+
+a:hover{
+    text-decoration: none;
+}
+
+div{
+    line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html{
+        font-size: 12px;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

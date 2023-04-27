@@ -1,0 +1,42 @@
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+div input{
+    border-radius: 10rem 0 0 10rem;
+
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    height: 3rem;
+    width: 20rem;
+    outline: none;
+    background-color: #f1f1f1;
+}
+
+div button{
+    border-radius: 0 10rem 10rem 0;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 3rem;
+    width: 5rem;
+    outline: none;
+    background-color: #3E54AC;
+    color: #fff;
+
+}
+
+div button:hover{
+    cursor: pointer;
+    background-color: #374372;
+}
+
+@media screen and (max-width: 768px) {
+    div input{
+        width: 15rem;
+    }
+}

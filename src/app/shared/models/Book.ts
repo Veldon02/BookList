@@ -1,8 +1,8 @@
-export class Book {
-    id!: number;
-    title!: string;
-    author!: string;
-    imageUrl:String = "/assets/images/default.png";
-    description!: string;
-    rating!: number;
+import { SaleInfo } from "./sale-info";
+import { VolumeInfo } from "./volume-info";
+
+export interface Book {
+    id: string;
+    saleInfo: SaleInfo;
+    volumeInfo: VolumeInfo;
 }

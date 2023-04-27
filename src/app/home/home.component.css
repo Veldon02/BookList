@@ -1,31 +1,20 @@
-ul{
-    list-style-type:none;
+div{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding-inline-start: 0;
-}
-
-a img{
-    height: 10rem;
-    object-fit: contain;
-}
-
-ul li a{
-    display: flex;
+    height: 70vh;
+    max-width: 80rem;
+    min-width: 20rem;
+    margin: 0 auto;
+    padding: 0 2rem;
     flex-direction: column;
-    overflow: hidden;
-
-    height: 20rem;
-    width: 20rem;
-    
-    border-radius: 1rem;
-    margin: 0.5rem;    
-    border: 1px solid #fff;
 }
 
-ul li a:hover{
-    cursor: pointer;
-    border: 1px solid #655DBB;
+span{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Dongle', sans-serif;
+    /* font-weight: 700; */
+    /* color: #000; */
+    color: #3E54AC;
 }
