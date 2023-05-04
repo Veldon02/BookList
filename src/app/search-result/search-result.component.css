@@ -88,5 +88,6 @@ a:hover{
 
     a{
         height: 22rem;
+        overflow-y: scroll;
     }
 }

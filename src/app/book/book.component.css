@@ -187,4 +187,10 @@ img{
     background-color: #3E54AC;
 }
 
+@media screen and (max-width: 320px){
+    .my-image img{
+        max-height: 30rem;
+    }
+}
+
 

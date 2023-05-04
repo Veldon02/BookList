@@ -10,6 +10,7 @@ header{
     display: flex;
     justify-content: center;
     transition: .3s;
+    height: 3.85rem;
 }
 
 a.header-logo{
